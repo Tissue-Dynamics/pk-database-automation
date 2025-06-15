@@ -1,0 +1,24 @@
+{
+  "name": "pk-database-automation",
+  "version": "1.0.0",
+  "description": "Automated pharmacokinetic database population using Claude Desktop Bridge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "research": "node .claude/research.js",
+    "debug": "node .claude/debug.js",
+    "analyze": "node .claude/analyze.js",
+    "process-drugs": "node src/process-drugs.js",
+    "test": "node src/test-connection.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["pharmacokinetics", "automation", "supabase", "claude"],
+  "author": "Shaun Regenbaum",
+  "license": "MIT"
+}
